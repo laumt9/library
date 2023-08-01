@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Odin Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>The Odin Library</h1>
+        <button id="addBookBtn">Add Book</button>
+    </div>
+    <div class="sidebar">
+        <div class="bookCounter">Books in Library: 0</div>
+    </div>
+    <div class="popup">
+        <form id="addBookForm">
+            <label for="title">Title</label>
+            <input type="text" id="title">
+            <label for="author">Author</label>
+            <input type="text" id="author">
+            <label for="pages"># of Pages</label>
+            <input type="number" id="pages" min="1">
+            <div>
+                <label for="read">Have you read this before? (Check if yes)</label>
+                <input type="checkbox" id="read" autocomplete="off">
+            </div>
+            <div class="submitBookBtnDiv">
+                <input type="submit" value="Add to Library" id="submitBookBtn">
+            </div>
+        </form>
+    </div>
+    <div class="library">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
